@@ -1,0 +1,65 @@
+# Financial Planner Application
+ 
+A financial planner for emergencies. The members will be able to use this tool to visualize their current savings. The members can then determine if they have enough reserves for an emergency fund. A financial planner for retirement. This tool will forecast the performance of their retirement portfolio in 30 years. To do this, the tool will make an Alpaca API call via the Alpaca SDK to get historical price data for use in Monte Carlo simulations.
+ 
+---
+ 
+## Technologies
+ 
+This project leverages python 3.7 with the following packages:
+ * [numpy](https://numpy.org) - Numpy provides an extensive
+package of mathematcal functions, random number generators, 
+and other compendious functions.
+* [pandas](https://pandas.pydata.org) - For using data science/data analysis and machine learning tasks.
+* [python-dotenv](https://pypi.org/project/python-dotenv/) - For reading key-value pairs from a .env file and can set them as environment variables.
+* [alpaca-trade-api](https://pypi.org/project/alpaca-trade-api/0.29/) - For allowing real live time trading data instantly through personal data
+* [requests](https://pypi.org/project/requests/) - For sending http requests using python.
+* [json](https://docs.python.org/3/library/json.html) - For storing the information into a file.
+ 
+ 
+ 
+---
+ 
+## Installation Guide
+ 
+Before running the application first install the following dependencies.
+ 
+```python
+ pip install pandas
+ pip install jupyterlab
+ pip install python-dotenv
+ pip install alpaca-trade-api
+ conda install numpy
+ conda install -c anaconda requests
+ conda install -c jmcmurray json
+
+```
+ 
+---
+ 
+## Usage
+ 
+To use the financial planner application simply clone the repository and run the **financial_planner.jpy** with:
+ 
+```python
+conda activate dev 
+jupyter lab
+```
+ 
+Upon launching the financial planner application you will be greeted with the following prompts.
+ 
+![Financial Planner Prompts](Images/financial_planner.png)
+ 
+ 
+---
+ 
+## Contributors
+ 
+Brought to you by Marissa Gonzales.
+ 
+---
+ 
+## License
+ 
+MIT
+ 
